@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RockCreate.cs">
+    <Files>
+      <File FileName="Assets\PlayerCtrl.cs" Line="21" Column="4" />
+      <File FileName="Assets\EnemyCtrl.cs" Line="43" Column="40" />
+      <File FileName="Assets\BulletCtrl.cs" Line="24" Column="19" />
+      <File FileName="Assets\DeadlineCtrl.cs" Line="18" Column="41" />
+      <File FileName="Assets\RockCtrl.cs" Line="7" Column="32" />
+      <File FileName="Assets\RockCreate.cs" Line="20" Column="69" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
