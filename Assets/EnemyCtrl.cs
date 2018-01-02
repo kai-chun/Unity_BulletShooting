@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyCtrl : MonoBehaviour {
 	float speed;
-	float dir;
+	float dir; // 移動方向
 	public GameObject bullet;
 	float count;
 	int HP;
