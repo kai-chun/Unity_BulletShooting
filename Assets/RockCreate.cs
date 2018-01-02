@@ -10,16 +10,16 @@ public class RockCreate : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		count = 0;	
-		r = Random.Range (0.5f,2f);
+		r = Random.Range (0.5f, 2f); // 控制 rock 出現的時間
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		count += Time.deltaTime;
-		if (count >=r) {
-			GameObject copyObj = GameObject.Instantiate (rock,new Vector3(12,Random.Range(-9f,9f),0), rock.transform.rotation);
+		if (count >= r) {
+			GameObject copyObj = GameObject.Instantiate (rock, new Vector3(12, Random.Range(-9f, 9f), 0), rock.transform.rotation);
 			count = 0;
-			r = Random.Range (0.5f,2f);
+			r = Random.Range (0.5f, 2f);
 		}
 	}
 
