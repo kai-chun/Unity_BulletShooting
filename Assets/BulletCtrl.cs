@@ -13,13 +13,13 @@ public class BulletCtrl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.Translate (Vector3.up*speed*Time.deltaTime,Space.Self);
+		this.transform.Translate (Vector3.up * speed * Time.deltaTime, Space.Self); // 控制子彈移動速度、方向
 	}
 
-	void OnTriggerEnter(Collider other){
-		if (other.name != "Deadline" && other.name!=this.name) {
+	void OnTriggerEnter (Collider other){
+		if (other.name != "Deadline" && other.name != this.name) { // 判斷子彈打到的對象
 			if (other.tag != this.tag) {
-				switch(other.tag){
+				switch (other.tag){
 				case "Player":
 					PlayerCtrl pCtrl = other.GetComponent<PlayerCtrl> ();
 					pCtrl.OnHit ();
