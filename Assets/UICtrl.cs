@@ -18,13 +18,13 @@ public class UICtrl : MonoBehaviour {
 		
 	}
 
-	void OnGUI(){
-		if(player !=null){
+	void OnGUI () {
+		if (player != null){
 			PlayerCtrl pCtrl = player.GetComponent<PlayerCtrl> ();
 			for (int i = 0; i < pCtrl.HP; i++) {
-				GUI.DrawTexture (new Rect (i*50, 0, 50, 50), heart, ScaleMode.ScaleToFit);
+				GUI.DrawTexture (new Rect (i * 50, 0, 50, 50), heart, ScaleMode.ScaleToFit); // 愛心
 			}
 		}
-		GUI.Label (new Rect (200, 0, 50, 20), "Killed: " + killed);
+		GUI.Label (new Rect (200, 0, 50, 20), "Killed: " + killed); // 玩家殺死敵人的數目顯示
 	}
 }
