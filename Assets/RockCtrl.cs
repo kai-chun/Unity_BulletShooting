@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RockCtrl : MonoBehaviour {
 	float speed;
+	
 	// Use this for initialization
 	void Start () {
 		speed = Random.Range (10f, 20f);
@@ -11,12 +12,12 @@ public class RockCtrl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.Translate (Vector3.left * speed * Time.deltaTime);
+		this.transform.Translate (Vector3.left * speed * Time.deltaTime); 
 	}
 
-	void OnTriggerEnter(Collider other){
+	void OnTriggerEnter (Collider other) {
 		if (other.tag == "Player") {
-			Destroy (other.gameObject);
+			Destroy (other.gameObject); // rock 碰撞 player 時，摧毀 player
 		}
-}
+	}
 }
