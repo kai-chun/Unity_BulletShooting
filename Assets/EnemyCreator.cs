@@ -15,8 +15,8 @@ public class EnemyCreator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(EnemyCopy ==null){
-			EnemyCopy = GameObject.Instantiate (EnemyObj, new Vector3(12,Random.Range(-9f,9f),0), EnemyObj.transform.rotation);
+		if(EnemyCopy == null){ // 當敵人死亡，創造一個新的
+			EnemyCopy = GameObject.Instantiate (EnemyObj, new Vector3(12, Random.Range(-9f,9f), 0), EnemyObj.transform.rotation);
 		}
 	}
 }
