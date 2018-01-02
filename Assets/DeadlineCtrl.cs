@@ -15,6 +15,6 @@ public class DeadlineCtrl : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		GameObject.Destroy (other.gameObject);
+		GameObject.Destroy (other.gameObject); // 摧毀超出範圍的子彈
 	}
 }
